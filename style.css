@@ -1,0 +1,220 @@
+/* style.css */
+
+/* Fuente general, márgenes y colores base */
+body {
+    font-family: Arial, sans-serif; /* Tipografía */
+    margin: 0; /* Quitamos márgenes por defecto */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+}
+
+/* Encabezado */
+header {
+    display: flex; /* Coloca logo y menú en línea */
+    justify-content: space-between; /* Espaciado entre logo y menú */
+    align-items: center; /* Centrado vertical */
+    background-color: black; /* Fondo azul */
+    padding: 10px 20px; /* Espaciado interno */
+    color: white; /* Texto blanco */
+}
+
+/* Logo */
+.logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+}
+
+/* Menú */
+nav ul {
+    list-style: none; /* Quita viñetas */
+    display: flex; /* Pone los elementos en línea */
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 20px; /* Espacio entre enlaces */
+}
+nav ul li a {
+    color: white; /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold;
+}
+
+.banner {
+	width: 100%;
+	height: 600px;
+	animation: banner 10s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes banner {
+	0%,
+	20% {
+		background-image: url("Banner\ web\ de\ moda\ ropa\ organica\ verde.png");
+	}
+	25%,
+	45% {
+		background-image: url("https://tse3.mm.bing.net/th/id/OIP.mNMqJMF4XRUPWv1uHHF9SwHaEK?pid=Api&P=0&h=180");
+	}
+	50%,
+	70% {
+		background-image: url("https://tse3.mm.bing.net/th/id/OIP.aJV93Nt9hgg-0KZQQO5WKQHaEK?pid=Api&P=0&h=180");
+	}
+	75%,
+	100% {
+		background-image: url("https://tse1.mm.bing.net/th/id/OIP.0ZHJivkXldzUnLiboVKo2AHaEP?pid=Api&P=0&h=180");
+	}
+}
+.capa {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(0, 0, 0, 0.6);
+}
+.info {
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+}
+.info h1 {
+	color: #fff;
+	font-size: 45px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+.info p {
+	color: #c7c7c7;
+	line-height: 2.9;
+	margin-bottom: 10px;
+
+}
+
+.info a {
+	color: #fff;
+	text-decoration: none;
+	background: rgb(0, 0, 0, 0.6);
+	padding: 16px 37px;
+	display: inline-block;
+	border-radius: 70px;
+
+}
+
+.slider {
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background: white;
+  margin: 20px auto; 
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Movimiento del slider */
+#slide1:checked ~ .slides {
+  transform: translateX(0);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-33.3333%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-66.6666%);
+}
+
+/* Botones de navegación */
+.navigation {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.bar {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bbb;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.bar:hover {
+  background: #333;
+}
+
+/* Botones de acción */
+.acciones {
+    text-align: center; /* Centra botones */
+    margin: 20px 0;
+}
+.acciones button {
+    background-color: D4AF37; /* Naranja */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer; /* Mano al pasar el mouse */
+}
+.acciones button:hover {
+    background-color: #D4AF37; /* Más oscuro al pasar el mouse */
+}
+
+/* Formulario de contacto */
+.contacto {
+    background: white;
+    padding: 20px;
+    max-width: 400px; /* Ancho limitado */
+    margin: 20px auto; /* Centrado */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.contacto h2 {
+    text-align: center;
+}
+.contacto input,
+.contacto textarea {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #D4AF37;
+    border-radius: 5px;
+}
+.contacto button {
+    background-color: #D4AF37;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contacto button:hover {
+    background-color: #D4AF37;
+}
