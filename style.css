@@ -56,15 +56,15 @@ nav ul li a {
 	}
 	25%,
 	45% {
-		background-image: url("https://tse3.mm.bing.net/th/id/OIP.mNMqJMF4XRUPWv1uHHF9SwHaEK?pid=Api&P=0&h=180");
+		background-image: url("tienda\ fisica\ horizontal.jpg");
 	}
 	50%,
 	70% {
-		background-image: url("https://tse3.mm.bing.net/th/id/OIP.aJV93Nt9hgg-0KZQQO5WKQHaEK?pid=Api&P=0&h=180");
+		background-image: url("BANNER\ productos.png");
 	}
 	75%,
 	100% {
-		background-image: url("https://tse1.mm.bing.net/th/id/OIP.0ZHJivkXldzUnLiboVKo2AHaEP?pid=Api&P=0&h=180");
+		background-image: url("banner\ helado.png");
 	}
 }
 .capa {
@@ -218,3 +218,4 @@ input[type="radio"] {
 .contacto button:hover {
     background-color: #D4AF37;
 }
+
