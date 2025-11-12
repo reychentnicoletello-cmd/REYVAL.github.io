@@ -56,15 +56,15 @@ nav ul li a {
 	}
 	25%,
 	45% {
-		background-image: url("tienda\ fisica\ horizontal.jpg");
+		background-image: url("tienda fisica horizontal.jpg");
 	}
 	50%,
 	70% {
-		background-image: url("BANNER\ productos.png");
+		background-image: url("BANNER productos.png");
 	}
 	75%,
 	100% {
-		background-image: url("banner\ helado.png");
+		background-image: url("banner helado.png");
 	}
 }
 .capa {
@@ -218,5 +218,6 @@ input[type="radio"] {
 .contacto button:hover {
     background-color: #D4AF37;
 }
+
 
 
