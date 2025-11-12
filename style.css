@@ -52,7 +52,7 @@ nav ul li a {
 @keyframes banner {
 	0%,
 	20% {
-		background-image: url("Banner\ web\ de\ moda\ ropa\ organica\ verde.png");
+		background-image: url("Banner web de moda ropa organica verde.png");
 	}
 	25%,
 	45% {
@@ -218,4 +218,5 @@ input[type="radio"] {
 .contacto button:hover {
     background-color: #D4AF37;
 }
+
 
